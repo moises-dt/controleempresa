@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="737.0" prefWidth="907.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CaixaEmpresaController">
+   <children>
+      <TableView fx:id="tabelaCaixa" layoutX="4.0" layoutY="270.0" onMouseClicked="#clickedTabelaCaixa" prefHeight="421.0" prefWidth="900.0">
+        <columns>
+          <TableColumn fx:id="idcaixa" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="data" prefWidth="75.0" text="Data" />
+            <TableColumn fx:id="descricao" prefWidth="305.0" text="Descrição" />
+            <TableColumn fx:id="valortotal" prefWidth="120.0" text="Valor " />
+            <TableColumn fx:id="descricaotransacao" prefWidth="150.0" text="Descrição Transação" />
+            <TableColumn fx:id="descricaopagamento" minWidth="0.0" prefWidth="174.0" text="Descrição Pagamento" />
+        </columns>
+      </TableView>
+      <Label layoutX="673.0" layoutY="705.0" prefHeight="17.0" prefWidth="43.0" text="Total" />
+      <TextField fx:id="txtTotal" alignment="CENTER_RIGHT" layoutX="755.0" layoutY="701.0" />
+      <Label layoutX="14.0" layoutY="62.0" text="Id" />
+      <TextField fx:id="txtId" editable="false" layoutX="80.0" layoutY="58.0" prefHeight="25.0" prefWidth="178.0" />
+      <TextField fx:id="txtDescricao" layoutX="80.0" layoutY="102.0" prefHeight="25.0" prefWidth="542.0" />
+      <TextField fx:id="txtValor" alignment="CENTER_RIGHT" layoutX="80.0" layoutY="143.0" prefHeight="25.0" prefWidth="178.0" />
+      <DatePicker fx:id="dtData" layoutX="420.0" layoutY="58.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="14.0" layoutY="106.0" text="Descrição" />
+      <Label layoutX="14.0" layoutY="147.0" text="Valor" />
+      <Label layoutX="286.0" layoutY="62.0" text="Data" />
+      <ComboBox fx:id="cmbTransacao" layoutX="421.0" layoutY="143.0" onAction="#aoSelecionarTransacao" prefHeight="25.0" prefWidth="200.0" />
+      <ComboBox fx:id="cmbPagamento" layoutX="421.0" layoutY="180.0" onAction="#aoSelecionarPagamento" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="286.0" layoutY="147.0" text="Descrição Transação" />
+      <Label layoutX="283.0" layoutY="184.0" text="Descrição Pagamento" />
+      <Button fx:id="btSalvarAlterar" layoutX="659.0" layoutY="30.0" mnemonicParsing="false" onAction="#btSalvarAlteraAction" prefHeight="55.0" prefWidth="218.0" text="Salvar / Alterar" />
+      <Button fx:id="btExcluir" layoutX="659.0" layoutY="104.0" mnemonicParsing="false" onAction="#btExcluirAction" prefHeight="55.0" prefWidth="218.0" text="Excluir" />
+      <Button fx:id="btFechar" layoutX="659.0" layoutY="176.0" mnemonicParsing="false" onAction="#btFecharAction" prefHeight="55.0" prefWidth="218.0" text="Fechar" />
+   </children>
+</AnchorPane>

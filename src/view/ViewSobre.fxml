@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="sobresistema" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SobreController">
+   <children>
+      <Label layoutX="48.0" layoutY="84.0" text="Versão do Produto" />
+      <Label layoutX="48.0" layoutY="101.0" text=" Controle Empresa 1.0" />
+      <Label layoutX="48.0" layoutY="336.0" text="Copyright (c) 2018-2019, MDT Sistemas e Soluções." />
+      <Button fx:id="btfechar" layoutX="469.0" layoutY="361.0" mnemonicParsing="false" onAction="#onBtFecharAction" prefHeight="25.0" prefWidth="117.0" text="Fechar" />
+   </children>
+</AnchorPane>

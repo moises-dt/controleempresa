@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="439.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TipoContaController">
+   <children>
+      <Button fx:id="btAlterarSalvar" layoutX="351.0" layoutY="24.0" mnemonicParsing="false" onAction="#onbtSalvarAlterarTPAction" prefHeight="36.0" prefWidth="209.0" text="Salvar / Alterar" />
+      <Button fx:id="btExcluir" layoutX="351.0" layoutY="71.0" mnemonicParsing="false" onAction="#btExcluirAction" prefHeight="36.0" prefWidth="209.0" text="Excluir" />
+      <Button fx:id="btFechar" layoutX="351.0" layoutY="117.0" mnemonicParsing="false" onAction="#onbtFecharAction" prefHeight="36.0" prefWidth="209.0" text="Fechar" />
+      <Label layoutX="35.0" layoutY="46.0" text="Código ID" />
+      <Label layoutX="36.0" layoutY="99.0" text="Descrição" />
+      <TextField fx:id="txtId" disable="true" layoutX="101.0" layoutY="42.0" prefHeight="25.0" prefWidth="223.0" />
+      <TextField fx:id="txtDescricao" layoutX="101.0" layoutY="95.0" prefHeight="25.0" prefWidth="223.0" />
+      <TableView fx:id="tabela" layoutX="37.0" layoutY="173.0" onMouseClicked="#onMouseClicked" prefHeight="238.0" prefWidth="525.0">
+        <columns>
+          <TableColumn fx:id="idconta" prefWidth="107.0" text="CodigoID" />
+          <TableColumn fx:id="Descricaocol" prefWidth="416.0" text="Descrição" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

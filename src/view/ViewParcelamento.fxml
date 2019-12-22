@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="controller.ParcelamentoController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="471.0" prefWidth="614.0">
+         <children>
+            <Button fx:id="btAlterarSalvar" layoutX="389.0" layoutY="24.0" mnemonicParsing="false" onAction="#onbtSalvarAlterarTPAction" prefHeight="36.0" prefWidth="209.0" text="Salvar / Alterar" />
+            <Button fx:id="btExcluir" layoutX="389.0" layoutY="71.0" mnemonicParsing="false" onAction="#btExcluirAction" prefHeight="36.0" prefWidth="209.0" text="Excluir" />
+            <Button fx:id="btFechar" layoutX="389.0" layoutY="117.0" mnemonicParsing="false" onAction="#onbtFecharAction" prefHeight="36.0" prefWidth="209.0" text="Fechar" />
+            <Label layoutX="26.0" layoutY="28.0" text="Código ID" />
+            <Label layoutX="26.0" layoutY="63.0" text="Descrição" />
+            <TableView fx:id="tabela" layoutX="8.0" layoutY="176.0" onMouseClicked="#onMouseClicked" prefHeight="287.0" prefWidth="598.0">
+               <columns>
+                  <TableColumn fx:id="IdCol" prefWidth="44.0" text="ID" />
+                  <TableColumn fx:id="EntradaCol" minWidth="0.0" prefWidth="0.0" text="Entrada" />
+                  <TableColumn fx:id="DescricaoCol" prefWidth="372.0" text="Descrição" />
+                  <TableColumn fx:id="JurosCol" prefWidth="90.0" text="Juros" />
+                  <TableColumn fx:id="ParcelasCol" prefWidth="90.0" text="Qtd Parcelas" />
+               </columns>
+            </TableView>
+            <TextField fx:id="txtId" disable="true" layoutX="153.0" layoutY="24.0" prefHeight="25.0" prefWidth="134.0" />
+            <TextField fx:id="txtDescricao" layoutX="153.0" layoutY="59.0" prefHeight="25.0" prefWidth="219.0" />
+            <CheckBox fx:id="ChcEntrada" layoutX="296.0" layoutY="28.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="72.0" text="Entrada" />
+            <Label layoutX="26.0" layoutY="99.0" text="Taxa de Juros" />
+            <Label layoutX="26.0" layoutY="135.0" text="Quantidade Parcelas" />
+            <TextField fx:id="txtParcelas" layoutX="153.0" layoutY="131.0" prefHeight="25.0" prefWidth="219.0" />
+            <TextField fx:id="txtJuros" layoutX="153.0" layoutY="95.0" prefHeight="25.0" prefWidth="219.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
